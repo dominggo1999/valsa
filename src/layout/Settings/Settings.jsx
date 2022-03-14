@@ -72,7 +72,7 @@ const Settings = () => {
   }, []);
 
   return (
-    <SettingsWrapper>
+    <SettingsWrapper id="scroll-top-anchor">
       <SettingsRow>
         <SearchBar
           value={prefix}

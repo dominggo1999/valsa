@@ -8,6 +8,7 @@ import './themes/themes.css';
 import GlobalStyles from './styles/GlobalStyles';
 import useThemeStore from './store/useThemeStore';
 import themes from './themes/themes.json';
+import ScrollTopButton from './common/ScrollTopButton/ScrollTopButton';
 
 const App = () => {
   const theme = useThemeStore((state) => state.theme.name);
@@ -34,6 +35,7 @@ const App = () => {
         <Settings />
         <WordList />
       </Main>
+      <ScrollTopButton />
     </AppWrapper>
   );
 };
