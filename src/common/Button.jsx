@@ -13,5 +13,6 @@ export const Button = styled.div`
     md:text-2xl
     hover:bg-accent-hover 
     cursor-pointer
+    select-none
   `}
 `;

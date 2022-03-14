@@ -1,13 +1,25 @@
+const withOpacity = (variableName) => {
+  return ({ opacityValue }) => {
+    if(opacityValue !== undefined) {
+      return `rgba(var(${variableName}), ${opacityValue})`;
+    }
+
+    return `rgb(var(${variableName}))`;
+  };
+};
+
+const v = (name) => {
+  return `var(--${name})`;
+};
+
 module.exports = {
   mode: 'jit',
   theme: {
     extend: {
       colors: {
-        primary: '#EFA45B',
-        'primary-hover': '#ca8d4f',
-        accent: '#4B6359',
-        'accent-hover': '#507464',
-        'main-text': '#ffffff',
+        primary: v('primary'),
+        accent: v('accent'),
+        'accent-hover': v('accent-hover'),
       },
       fontFamily: {
         primary: ['Poppins', 'serif'],

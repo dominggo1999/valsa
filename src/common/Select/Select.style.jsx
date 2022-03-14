@@ -7,12 +7,10 @@ export const SingleSelectWrapper = styled.div`
     font-primary 
     font-bold 
   `}
+
   .react-select-container{
-    ${tw`
-      w-40
-    `}
+    ${({ wider }) => (wider ? tw`w-40 md:w-52` : tw`w-40`)}
   }
-  
   
   /* If searchable */
   .react-select__input-container{

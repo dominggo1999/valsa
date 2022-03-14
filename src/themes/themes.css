@@ -1,0 +1,173 @@
+/* originale */
+.originale {
+  --accent: #4B6359;
+  --accent-hover: #507464;
+  --primary: #EFA45B;
+}
+
+/* burgundy */
+.burgundy {
+  --accent:  #993241;
+  --accent-hover: #ce3a50;
+  --primary: #FCB6B0;
+}
+
+/* camouflage */
+.camouflage {
+  --accent:  #909580;
+  --accent-hover: #b8bda7;
+  --primary: #545643;
+}
+
+/* charcoal */
+.charcoal {
+  --accent:  #A5998A;
+  --accent-hover: #d3c1ac;
+  --primary: #3A445D;
+}
+
+/* crayola */
+.crayola {
+  --accent:   #681538;
+  --accent-hover:  #692c46;
+  --primary: #e49069;
+}
+
+/* let there be light */
+.let-there-be-light{ 
+  --accent: #000000;
+  --accent-hover: #3a3a3a;
+  --primary: #ffffff;
+}
+
+/* let there be dark */
+.let-there-be-dark{  
+  --accent: #ffffff;
+  --accent-hover: #929292;
+  --primary: #000000;
+}
+
+/* martian weather */
+.martian-weather{ 
+  --accent:  #cf5e35;
+  --accent-hover: #db7652;
+  --primary: #832324;
+}
+
+/* natur */
+.natur{ 
+  --accent: #585001;
+  --accent-hover: #423c05;
+  --primary: #A4852B;
+}
+
+/* romanza */
+.romanza{ 
+  --accent:  #d86384;
+  --accent-hover: #bb516f;
+  --primary: #7E092C;
+}
+
+ /* roronoa */
+ .roronoa{ 
+  --accent: #9ADA62;
+  --accent-hover: #b4ff71;
+  --primary: #2B4D26;
+}
+
+/* Sakura latte */
+.sakura-latte{ 
+  --accent: #50363b;
+  --accent-hover: #4b282d;
+  --primary: #d67788
+}
+
+ /* uzumaki */
+ .uzumaki{ 
+  --accent: #18191D;
+  --accent-hover: #000000;
+  --primary: #BE5B13;
+}
+
+/* xepia */
+.xepia{ 
+  --accent:  #ffbc9a;
+  --accent-hover: #ffa87c;
+  --primary: #352E28;
+}
+
+/* still blue */
+.still-blue{ 
+  --accent:  #EDE6D3;
+  --accent-hover: #d3cab3;
+  --primary: #58949C;
+}
+
+/* golden-eggshell */
+.golden-eggshell{ 
+  --accent:  #d8b113;
+  --accent-hover: #f7ce2e;
+  --primary: #F4EEDB;
+}
+
+/* marigold and rose */
+.marigold-and-rose{ 
+  --accent:  #F15E64;
+  --accent-hover: #e26f73;
+  --primary: #F5E874;
+}
+
+/* vintage poster */
+.vintage-poster{ 
+  --accent:  #927464;
+  --accent-hover: #b48d78;
+  --primary: #D8C5B4;
+}
+
+/* green spring */
+.green-spring{ 
+  --accent:  #26281E;
+  --accent-hover: #374733;
+  --primary: #AACBA1;
+}
+
+/* red dress */
+.red-dress{ 
+  --accent:  #080A08;
+  --accent-hover: #381214;
+  --primary: #B4353B;
+}
+
+/* antik */
+.antik{ 
+  --accent:  #272D2D;
+  --accent-hover: #161d1d;
+  --primary: #C4A07A;
+}
+
+/* midorikun */
+.midorikun{ 
+  --accent:  #C6AA76;
+  --accent-hover: #cea964;
+  --primary: #193120;
+}
+
+/* retrospective */
+.retrospective{ 
+  --accent:  #E1D7BF;
+  --accent-hover: #f1e1b9;
+  --primary: #E36B5A;
+}
+
+/* vlueish */
+.vluish{ 
+  --accent:  #0D4965;
+  --accent-hover: #185a79;
+  --primary: #FFFFFF;
+}
+/* strawberry milk */
+.strawberry-milk{ 
+  --accent:  #ffffff;
+  --accent-hover: #185a79;
+  --primary: #f1a6a9;
+}

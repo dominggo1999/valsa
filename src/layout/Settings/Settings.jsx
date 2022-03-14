@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 import {
   SettingsWrapper,
   SettingsRow,
@@ -65,7 +65,7 @@ const Settings = () => {
     changeSearch('generatedWords', results);
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const results = pseudoWords();
 
     changeSearch('generatedWords', results);

@@ -20,6 +20,7 @@ const Select = ({
   labelKey,
   valueKey,
   name,
+  wider,
   ...rest
 }) => {
   const options = createOptions(opt, labelKey, valueKey);
@@ -33,7 +34,9 @@ const Select = ({
   const val = getValue();
 
   return (
-    <SingleSelectWrapper>
+    <SingleSelectWrapper
+      wider={wider}
+    >
       <ReactSelect
         name={name}
         onChange={handleChange}
