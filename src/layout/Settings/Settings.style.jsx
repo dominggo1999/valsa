@@ -5,12 +5,14 @@ export const SettingsWrapper = styled.div`
     my-4
     flex 
     flex-col
-    gap-y-5
+    gap-y-6
+    w-full
   `}
 `;
 
 export const SettingsRow = styled.div`
   ${tw`
+    w-full
     flex 
     gap-x-10
     gap-y-4

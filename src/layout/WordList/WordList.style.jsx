@@ -12,18 +12,24 @@ export const WordListWrapper = styled.div`
   .my-masonry-grid {
     ${tw`
       w-full
+      flex 
+      ml-[-10px]  
+      md:ml-[-20px]
     `}
-
-    display: flex;
-    margin-left: -20px; /* gutter size offset */
   }
   .my-masonry-grid_column {
-    padding-left: 20px; /* gutter size */
-    background-clip: padding-box;
+    ${tw`
+      pl-[10px]
+      md:pl-[20px]
+      bg-clip-padding
+    `}
   }
 
   /* Style your items */
   .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
-    margin-bottom: 20px;
+    ${tw`
+      mb-[10px]
+      md:mb-[20px]
+    `}
 }
 `;

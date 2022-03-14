@@ -2,6 +2,8 @@ import tw, { styled } from 'twin.macro';
 
 export const SearchBarWrapper = styled.div`
   ${tw`
+    w-full
+    md:w-1/3
     flex 
     flex-col
     font-bold
@@ -14,7 +16,8 @@ export const SearchBarWrapper = styled.div`
       border-accent 
       py-1
       px-4
-      text-2xl
+      text-xl
+      md:text-2xl
       font-bold
       outline-none
       caret-accent

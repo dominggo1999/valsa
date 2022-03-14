@@ -9,7 +9,8 @@ export const Button = styled.div`
     font-bold
     py-2
     text-center
-    text-2xl
+    text-xl
+    md:text-2xl
     hover:bg-accent-hover 
     cursor-pointer
   `}
