@@ -6,7 +6,7 @@ export const SearchBarWrapper = styled.div`
     md:w-1/3
     flex 
     flex-col
-    font-bold
+    font-bold 
   `}
 
   input {
@@ -15,12 +15,31 @@ export const SearchBarWrapper = styled.div`
       border-2 
       border-accent 
       py-1
-      px-4
+      pl-4
+      pr-8
       text-xl
       md:text-2xl
       font-bold
       outline-none
       caret-accent
+      w-full
     `}
   }
+`;
+
+export const InputWrapper = styled.div`
+  ${tw`
+    relative 
+    flex
+    w-full
+  `}
+`;
+
+export const ResetInputButton = styled.button`
+  ${tw`
+    absolute
+    text-2xl
+    right-2
+    h-full
+  `}
 `;

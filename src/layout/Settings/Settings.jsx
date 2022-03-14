@@ -66,12 +66,14 @@ const Settings = () => {
           name="prefix"
           label="Prefix~"
           onChange={(e) => handleWordPartsChange('prefix', e)}
+          property="prefix"
         />
         <SearchBar
           value={suffix}
           name="suffix"
           label="~Suffix"
           onChange={(e) => handleWordPartsChange('suffix', e)}
+          property="suffix"
         />
       </SettingsRow>
       <SettingsRow>

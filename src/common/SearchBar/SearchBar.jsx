@@ -1,20 +1,38 @@
 import React from 'react';
-import { SearchBarWrapper } from './SearchBar.style';
+import { AiOutlineClose } from 'react-icons/ai';
+import { SearchBarWrapper, ResetInputButton, InputWrapper } from './SearchBar.style';
 import Label from '../Label';
+import { searchMethod } from '../../store/useSearchStore';
 
-const SearchBar = ({ name, label, ...rest }) => {
+const SearchBar = ({
+  value, name, label, property, onChange, ...rest
+}) => {
+  const changeSearch = searchMethod('changeSearch');
+
+  const clearInput = () => {
+    changeSearch(property, '');
+  };
+
   return (
     <SearchBarWrapper>
       <Label htmlFor={name}>{label}</Label>
-      <input
-        name={name}
-        {...rest}
-        type="text"
-        autoCapitalize="none"
-        autoCorrect="off"
-        autoComplete="off"
-        spellCheck={false}
-      />
+      <InputWrapper>
+        <input
+          value={value}
+          name={name}
+          onChange={onChange}
+          {...rest}
+          type="text"
+          autoCapitalize="none"
+          autoCorrect="off"
+          autoComplete="off"
+          spellCheck={false}
+        />
+        {
+          value
+        && <ResetInputButton onClick={clearInput}><AiOutlineClose /></ResetInputButton>
+        }
+      </InputWrapper>
     </SearchBarWrapper>
   );
 };
