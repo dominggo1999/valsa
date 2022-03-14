@@ -4,7 +4,12 @@ export const AppWrapper = styled.div`
   ${tw`
     w-full 
     min-h-screen
-    text-accent bg-primary 
+    text-accent 
+    bg-primary
+    transition 
+    transition-bg
+    ease-out-sine
+    duration-400 
   `}
 `;
 

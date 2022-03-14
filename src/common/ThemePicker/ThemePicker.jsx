@@ -50,6 +50,7 @@ const ThemePicker = () => {
         valueKey="value"
         name="horizontal-alignment"
         handleChange={handleChange}
+        isSearchable
       />
     </ThemePickerWrapper>
   );

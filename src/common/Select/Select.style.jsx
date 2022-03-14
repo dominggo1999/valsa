@@ -16,7 +16,7 @@ export const SingleSelectWrapper = styled.div`
   .react-select__input-container{
     ${tw`
       font-bold
-      text-white
+      text-accent
     `}
   }
   .react-select__control{
@@ -116,7 +116,7 @@ export const SingleSelectWrapper = styled.div`
   /* No options */
   .react-select__menu-notice.react-select__menu-notice--no-options{
     ${tw`
-      text-primary 
+      text-accent 
     `}
   }
 `;
