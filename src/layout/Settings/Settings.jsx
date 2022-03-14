@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   SettingsWrapper,
   SettingsRow,
@@ -51,6 +51,12 @@ const Settings = () => {
 
     changeSearch('generatedWords', results);
   };
+
+  useEffect(() => {
+    const results = pseudoWords();
+
+    changeSearch('generatedWords', results);
+  }, []);
 
   return (
     <SettingsWrapper>

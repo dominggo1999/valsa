@@ -108,7 +108,7 @@ export const pseudoWords = (options) => {
   const {
     language, wordCount = 10, prefix = '', suffix = '',
   } = options || {};
-  const list = languages ? languages[language] : languages.english;
+  const list = language ? languages[language] : languages.english;
   const words = [];
 
   for (let i = 0; i < wordCount; i += 1) {
