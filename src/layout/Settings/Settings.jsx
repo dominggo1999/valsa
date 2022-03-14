@@ -37,7 +37,20 @@ const Settings = () => {
   };
 
   const handleWordPartsChange = (property, e) => {
-    const val = e.target.value;
+    let val = e.target.value;
+
+    // Max length
+    if(val.length > 12) return;
+
+    // Remove Number
+    val = val.replace(/[0-9]/g, '');
+
+    // Remove Special chars
+    val = val.replace(/[^\w ]/, '');
+
+    // Remove space
+    val = val.replaceAll(/\s/g, '');
+
     changeSearch(property, val);
   };
 
