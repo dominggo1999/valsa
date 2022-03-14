@@ -7,6 +7,13 @@ const CustomStyles = createGlobalStyle`
     ${tw`antialiased font-primary text-accent bg-primary min-h-screen`}
   }
 
+    &::selection {
+      ${tw`
+        bg-accent
+        text-primary
+      `}
+    }
+
   @font-face {
     font-family: 'Caramel';
     src: url('CaramelRegular.woff2') format('woff2'),

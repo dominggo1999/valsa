@@ -32,7 +32,6 @@ export const WordCardWrapper = styled.div`
     border-2
     border-accent
     items-center
-    select-none
     relative
   `}
 

@@ -46,6 +46,7 @@ const WordCard = ({ word, height }) => {
 
   return (
     <WordCardWrapper
+      onDoubleClick={copyWord}
       style={{
         minHeight: height,
       }}
