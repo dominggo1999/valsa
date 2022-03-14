@@ -11,6 +11,7 @@ export const SearchBarWrapper = styled.div`
 
   input {
     ${tw`
+      lowercase
       bg-transparent
       border-2 
       border-accent 
