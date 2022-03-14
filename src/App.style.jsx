@@ -13,6 +13,7 @@ export const Main = styled.div`
     flex 
     flex-col 
     mx-auto
-    px-5
+    px-3
+    md:px-5
   `}
 `;

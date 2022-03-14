@@ -14,5 +14,4 @@ export const Button = styled.div`
     hover:bg-accent-hover 
     cursor-pointer
   `}
-
 `;
