@@ -82,11 +82,26 @@ export const SingleSelectWrapper = styled.div`
       p-0
     `}
   }
+
+  /* Focused */
+  .react-select__option.react-select__option--is-focused,
+  .react-select__option:active{
+    ${tw`
+      bg-accent-hover
+      text-primary
+    `}
+  }
+
+  /* Active */
+  .react-select__option.react-select__option--is-selected{
+    ${tw`
+      bg-accent
+      text-primary  
+    `}
+  }
+
   .react-select__option{
     ${tw`
-      bg-none
-      text-accent
-      hover:(bg-accent text-primary)
       font-bold
       capitalize 
       text-lg
@@ -94,14 +109,10 @@ export const SingleSelectWrapper = styled.div`
   }
   .react-select__option--is-focused{
     ${tw`
-      bg-accent-hover
-      text-primary
     `}
   }
   .react-select__option--is-selected{
     ${tw`
-      bg-accent
-      text-primary
     `}
   }
   /* No options */
