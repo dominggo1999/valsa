@@ -123,7 +123,7 @@ const Settings = () => {
       </SettingsRow>
       <ActionButtons>
         <Button onClick={generateWords}>Generate </Button>
-        <Button onClick={downloadList}>Download .txt </Button>
+        <Button onClick={downloadList}>Save .txt </Button>
       </ActionButtons>
     </SettingsWrapper>
   );
