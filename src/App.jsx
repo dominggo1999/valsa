@@ -9,6 +9,7 @@ import GlobalStyles from './styles/GlobalStyles';
 import useThemeStore from './store/useThemeStore';
 import themes from './themes/themes.json';
 import ScrollTopButton from './common/ScrollTopButton/ScrollTopButton';
+import LoadingTransition from './layout/LoadingTransition/LoadingTransition';
 
 const savedTheme = localStorage.getItem('theme');
 
@@ -35,6 +36,7 @@ const App = () => {
       className={theme || savedTheme}
     >
       <GlobalStyles />
+      <LoadingTransition />
       <Main>
         <Header />
         <Description />

@@ -4,6 +4,7 @@ import swedish from './seeds/swedish.json';
 import germany from './seeds/germany.json';
 import spanish from './seeds/spanish.json';
 import italian from './seeds/italian.json';
+import { rand } from '../util/random';
 
 const languages = {
   english,
@@ -16,12 +17,6 @@ const languages = {
 const vowels = ['a', 'e', 'i', 'o', 'u'];
 const consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q',
   'r', 's', 't', 'v', 'w', 'x', 'y', 'z'];
-
-const rand = (num) => {
-  if(typeof num !== 'number') return;
-
-  return Math.ceil(Math.random() * num);
-};
 
 const countFreq = [
   2, 2,
