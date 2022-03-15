@@ -9,9 +9,22 @@ const initialSearch = {
   generatedWords: [],
 };
 
+const getHeight = () => {
+  return 150 + Math.ceil(Math.random() * 100);
+};
+
 const changeSearch = (set, key, newSearch) => {
   return set(produce((draft) => {
-    draft.search[key] = newSearch;
+    if(key === 'generatedWords') {
+      draft.search[key] = newSearch.map((item) => {
+        return {
+          ...item,
+          height: getHeight(),
+        };
+      });
+    }else{
+      draft.search[key] = newSearch;
+    }
   }));
 };
 

@@ -5,10 +5,6 @@ import { searchSelector } from '../../store/useSearchStore';
 import WordCard from '../../common/WordCard/WordCard';
 import { breakpoints } from '../../constants/breakpoints';
 
-const getHeight = () => {
-  return 150 + Math.ceil(Math.random() * 100);
-};
-
 const {
   md,
   lg,
@@ -30,8 +26,7 @@ const WordList = () => {
         className="my-masonry-grid"
         columnClassName="my-masonry-grid_column"
       >
-        {generatedWords && generatedWords.map(({ word, id }) => {
-          const height = getHeight();
+        {generatedWords && generatedWords.map(({ word, id, height }) => {
           return (
             <WordCard
               height={height}
