@@ -1,6 +1,6 @@
 import tw, { styled } from 'twin.macro';
 
-export const HeaderWrapper = styled.div`
+export const HeaderWrapper = styled.header`
   ${tw`
     flex 
     py-4

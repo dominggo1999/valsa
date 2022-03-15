@@ -16,7 +16,7 @@ export const AppWrapper = styled.div`
   `}
 `;
 
-export const Main = styled.div`
+export const Main = styled.main`
   ${tw`
     max-w-[1000px] 
     flex 

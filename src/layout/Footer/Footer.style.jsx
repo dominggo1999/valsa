@@ -1,6 +1,6 @@
 import tw, { styled } from 'twin.macro';
 
-export const StyledFooter = styled.div`
+export const StyledFooter = styled.footer`
   ${tw`
     flex 
     justify-center 
