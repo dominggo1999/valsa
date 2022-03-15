@@ -2,12 +2,14 @@ import React, { useLayoutEffect } from 'react';
 import {
   SettingsWrapper,
   SettingsRow,
+  ActionButtons,
 } from './Settings.style';
 import SearchBar from '../../common/SearchBar/SearchBar';
 import SettingsSelect from '../../common/SettingsSelect/SettingsSelect';
 import { searchSelector, searchMethod } from '../../store/useSearchStore';
 import { Button } from '../../common/Button';
 import { pseudoWords } from '../../generator/generator';
+import { download } from '../../util/downloadTxtFile';
 
 const wordsCountOptions = [
   { value: 10, label: '10' },
@@ -30,6 +32,7 @@ const Settings = () => {
   const language = searchSelector('language');
   const prefix = searchSelector('prefix');
   const suffix = searchSelector('suffix');
+  const generatedWords = searchSelector('generatedWords');
   const changeSearch = searchMethod('changeSearch');
 
   const handleSelectChange = (property, e) => {
@@ -71,6 +74,15 @@ const Settings = () => {
     changeSearch('generatedWords', results);
   }, []);
 
+  const downloadList = () => {
+    let textContent = '';
+    generatedWords.forEach((item) => {
+      textContent += `${item.word}\n`;
+    });
+
+    download(textContent);
+  };
+
   return (
     <SettingsWrapper id="scroll-top-anchor">
       <SettingsRow>
@@ -109,7 +121,10 @@ const Settings = () => {
           handleChange={(e) => handleSelectChange('language', e)}
         />
       </SettingsRow>
-      <Button onClick={generateWords}>Generate </Button>
+      <ActionButtons>
+        <Button onClick={generateWords}>Generate </Button>
+        <Button onClick={downloadList}>Download .txt </Button>
+      </ActionButtons>
     </SettingsWrapper>
   );
 };

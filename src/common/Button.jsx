@@ -1,6 +1,6 @@
 import tw, { styled } from 'twin.macro';
 
-export const Button = styled.div`
+export const Button = styled.button`
   ${tw`
     bg-accent
     text-primary

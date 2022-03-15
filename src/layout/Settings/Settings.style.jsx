@@ -17,5 +17,26 @@ export const SettingsRow = styled.div`
     gap-x-10
     gap-y-4
     flex-wrap
+    sm:justify-start
   `}
+`;
+
+export const ActionButtons = styled.div`
+  ${tw`
+    flex 
+    flex-wrap
+    sm:gap-x-4
+    gap-y-2
+    justify-between
+    sm:justify-start
+  `}
+
+  button {
+    ${tw`
+      text-lg
+      sm:w-1/2
+    `}
+
+    width : 48%;
+  }
 `;
