@@ -10,6 +10,8 @@ import useThemeStore from './store/useThemeStore';
 import themes from './themes/themes.json';
 import ScrollTopButton from './common/ScrollTopButton/ScrollTopButton';
 
+const savedTheme = localStorage.getItem('theme');
+
 const App = () => {
   const theme = useThemeStore((state) => state.theme.name);
   const changeTheme = useThemeStore((state) => state.changeTheme);
@@ -27,12 +29,10 @@ const App = () => {
     }
   }, []);
 
-  if(!theme) return null;
-
   return (
     <AppWrapper
-      theme={theme}
-      className={theme}
+      theme={theme || savedTheme}
+      className={theme || savedTheme}
     >
       <GlobalStyles />
       <Main>

@@ -21,7 +21,6 @@ const Select = ({
   valueKey,
   name,
   wider,
-  isSearchable,
   ...rest
 }) => {
   const options = createOptions(opt, labelKey, valueKey);
@@ -45,7 +44,7 @@ const Select = ({
         className="react-select-container"
         classNamePrefix="react-select"
         options={options}
-        isSearchable={isSearchable}
+        isSearchable={false}
       />
     </SingleSelectWrapper>
   );
