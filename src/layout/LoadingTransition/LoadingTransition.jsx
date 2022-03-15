@@ -31,6 +31,7 @@ const LoadingTransition = () => {
   const cardRef = useRef();
   const wrapperRef = useRef();
   const maskRef = useRef();
+  const [animationFinished, setAnimationFinished] = useState(false);
 
   useEffect(() => {
     gsap.to(wrapperRef.current, {
@@ -43,6 +44,9 @@ const LoadingTransition = () => {
       y: '-100%',
       delay: 3.18,
       duration: 0.45,
+      onComplete: () => {
+        setAnimationFinished(true);
+      },
     });
   }, []);
 
@@ -73,6 +77,8 @@ const LoadingTransition = () => {
       clearInterval(loadingTimerRef.current);
     };
   }, []);
+
+  if(animationFinished) return null;
 
   return (
     <>
