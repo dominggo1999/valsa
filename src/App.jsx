@@ -10,6 +10,7 @@ import useThemeStore from './store/useThemeStore';
 import themes from './themes/themes.json';
 import ScrollTopButton from './common/ScrollTopButton/ScrollTopButton';
 import LoadingTransition from './layout/LoadingTransition/LoadingTransition';
+import Footer from './layout/Footer/Footer';
 
 const savedTheme = localStorage.getItem('theme');
 
@@ -43,6 +44,7 @@ const App = () => {
         <Settings />
         <WordList />
       </Main>
+      <Footer />
       <ScrollTopButton />
     </AppWrapper>
   );
