@@ -6,6 +6,9 @@ export const AppWrapper = styled.div`
     min-h-screen
     text-accent 
     bg-primary
+  `}
+
+  ${({ theme }) => theme && tw`
     transition 
     transition-bg
     ease-out-sine

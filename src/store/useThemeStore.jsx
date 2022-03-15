@@ -2,7 +2,7 @@ import create from 'zustand';
 import produce from 'immer';
 
 export const initialTheme = {
-  name: 'originale',
+  name: '',
 };
 
 const changeTheme = (set, newTheme) => {

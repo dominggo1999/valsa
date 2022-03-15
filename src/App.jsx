@@ -23,11 +23,17 @@ const App = () => {
       changeTheme(savedTheme);
     }else{
       localStorage.setItem('theme', 'originale');
+      changeTheme('originale');
     }
   }, []);
 
+  if(!theme) return null;
+
   return (
-    <AppWrapper className={theme}>
+    <AppWrapper
+      theme={theme}
+      className={theme}
+    >
       <GlobalStyles />
       <Main>
         <Header />
