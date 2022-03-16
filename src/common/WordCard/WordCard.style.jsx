@@ -34,9 +34,7 @@ export const WordCardWrapper = styled.div`
     items-center
     relative
   `}
-
-  transition : background-color 100ms;
-
+  
   p{
     ${tw`
       text-xl
@@ -51,6 +49,7 @@ export const WordCardWrapper = styled.div`
   &:hover ${ActionButtons}{
     opacity : 100;
   }
+
 `;
 
 export const LoadingIcon = styled.div`

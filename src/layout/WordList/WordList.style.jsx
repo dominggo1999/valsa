@@ -11,10 +11,11 @@ export const WordListWrapper = styled.div`
 
   .my-masonry-grid {
     ${tw`
-      w-full
       flex 
       ml-[-10px]  
-      md:ml-[-20px]
+      md:ml-[-20px] 
+      w-[calc(100% + 10px)]
+      md:w-[calc(100% + 20px)]
     `}
   }
   .my-masonry-grid_column {
@@ -31,5 +32,5 @@ export const WordListWrapper = styled.div`
       mb-[10px]
       md:mb-[20px]
     `}
-}
+  }
 `;

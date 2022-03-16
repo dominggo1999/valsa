@@ -1,6 +1,9 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, {
+  useState, useRef, useEffect,
+} from 'react';
 import { BiCopy, BiSearchAlt2 } from 'react-icons/bi';
 import { GoCheck } from 'react-icons/go';
+import { gsap } from 'gsap';
 import {
   WordCardWrapper,
   ActionButtons,
@@ -21,8 +24,9 @@ const dictionaryCheck = {
 
 const WordCard = ({ word, height }) => {
   const [copyLoading, setCopyLoading] = useState(false);
-  const loadingTimeRef = useRef();
   const language = searchSelector('language');
+  const loadingTimeRef = useRef();
+  const cardRef = useRef();
 
   const copyWord = () => {
     navigator.clipboard.writeText(word);
@@ -46,6 +50,7 @@ const WordCard = ({ word, height }) => {
 
   return (
     <WordCardWrapper
+      ref={cardRef}
       onDoubleClick={copyWord}
       style={{
         minHeight: height,

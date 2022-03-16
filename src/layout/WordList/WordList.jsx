@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Masonry from 'react-masonry-css';
 import { WordListWrapper } from './WordList.style';
 import { searchSelector } from '../../store/useSearchStore';
